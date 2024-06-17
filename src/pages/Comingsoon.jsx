@@ -6,6 +6,7 @@ import Contact from "../images/menu icon.png";
 import banners from "../images/Group 1.svg";
 import banner2 from "../images/Frame1.svg";
 import Tnennt from "../images/TNENNT.svg";
+import AnimatedCounter from "./Animatedcounter.jsx"
 import { useState, useEffect } from "react";
 import "animate.css";
 import "./style.css";
@@ -146,15 +147,19 @@ const Comingsoon = () => {
 
       <div className="flex">
         <div className="fixed bottom-0 left-10 w-full py-4 px-6 bg-white hidden lg:block">
-          <h2 className="text-2xl font-extrabold text-[#094446]">50</h2>
+          <h2 className="text-2xl font-extrabold text-[#094446]">
+          <AnimatedCounter from={0} to={52} />
+          </h2>
           <h3 className="">
             Total <span className="text-green-500">&bull;</span>
-            <br /> Tenant
+            <br /> Tnennt
           </h3>
         </div>
 
         <div className="fixed bottom-0 left-72 w-full py-4 px-6 hidden lg:block bg-white">
-          <h2 className="text-2xl font-extrabold text-[#094446]">02</h2>
+          <h2 className="text-2xl font-extrabold text-[#094446]">0
+          <AnimatedCounter from={0} to={2} />
+          </h2>
           <h3 className="">
             Middleman <span className="text-green-500">&bull;</span>
             <br /> Strength
